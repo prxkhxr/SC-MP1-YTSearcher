@@ -13,7 +13,6 @@ def SearchYT(query,n):
         n=1
     c_options = wb.ChromeOptions()
     c_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    c_options.add_extension("D:\\Downloads\\adblock.crx")
 
     br = wb.Chrome(options=c_options)
     br.get("https://www.youtube.com/results?search_query="+query)
